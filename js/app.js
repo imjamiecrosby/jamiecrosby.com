@@ -1,57 +1,9 @@
 
-import { gsap } from "gsap";
 import emailjs from '@emailjs/browser';
 import Sticky from 'sticky-js';
 import LazyLoad from "vanilla-lazyload";
 import GLightbox from 'glightbox';
 
-
-// Me Animation
-
-gsap.registerPlugin(MotionPathPlugin,DrawSVGPlugin) 
-
-var tl = gsap.timeline();
-tl.from(".animate.circle", { duration: 0.75, drawSVG: 0, ease: "power3.out"}, 0.5);   
-tl.from(".animate.m", { duration: 0.5, drawSVG: 0, ease: "power3.inout"}, 1.25);   
-tl.from(".animate.e", { duration: 0.5, drawSVG: 0 }, 2);   
-
-
-let paths = splitPaths(".me-arrow");
-let duration = 1,
-    distance = 0;
-paths.forEach(segment => distance += segment.getTotalLength());
-paths.forEach(segment => {
-  tl.from(segment, {
-    drawSVG: 0,
-    ease: "power3.out",
-    duration: duration * (segment.getTotalLength() / distance)
-  });
-});
-
-function splitPaths(paths) {
-  let toSplit = gsap.utils.toArray(paths),
-      newPaths = [];
-  if (toSplit.length > 1) {
-    toSplit.forEach(path => newPaths.push(...splitPaths(path)));
-  } else {
-    let path = toSplit[0],
-        rawPath = MotionPathPlugin.getRawPath(path),
-        parent = path.parentNode,
-        attributes = [].slice.call(path.attributes);
-    newPaths = rawPath.map(segment => {
-      let newPath = document.createElementNS("http://www.w3.org/2000/svg", "path"),
-          i = attributes.length;
-      while (i--) {
-        newPath.setAttributeNS(null, attributes[i].nodeName, attributes[i].nodeValue);
-      }
-      newPath.setAttributeNS(null, "d", "M" + segment[0] + "," + segment[1] + "C" + segment.slice(2).join(",") + (segment.closed ? "z" : ""));
-      parent.insertBefore(newPath, path);
-      return newPath;
-    });
-    parent.removeChild(path);
-  }
-  return newPaths;
-}
 
 
 // Modal Popup
