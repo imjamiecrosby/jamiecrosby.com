@@ -1,13 +1,13 @@
 {
-  "name": " ",
+  "name": "Website 2024",
   "version": "0.0.1",
-  "description": "",
+  "description": "Website 2024",
   "private": true,
   "keywords": [
     ""
   ],
   "license": "",
-  "author": "",
+  "author": "Jamie Crosby",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --config webpack.config.dev.js",

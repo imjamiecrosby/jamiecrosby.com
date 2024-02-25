@@ -107,11 +107,8 @@ function validateForm() {
     if(isValid === false) {
         message.textContent ="Please fil out all the fields";
         message.style.color = 'red';
-        messageContainer.style.borderColor = 'red';
     } else if(isValid === true) {
         message.textContent ="Your message is being sent";
-        message.style.color = 'Orange';
-        messageContainer.style.borderColor = 'Orange';
     }
 }
 
@@ -127,7 +124,6 @@ function validateForm() {
     .then(function(response){
         message.textContent ="Thank you very much we will reply to you as soon as possible";
         message.style.color = 'green';
-        messageContainer.style.borderColor = 'green';
         console.log('SUCCES', response.status, response.text);
     }, function(error){
         console.log("FAILED", error);
