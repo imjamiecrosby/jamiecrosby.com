@@ -249,6 +249,7 @@ body {
   position: relative;
   font-family: "Roboto", sans-serif;
   color: #333;
+  padding: 0 16px;
 }
 section {
   display: flex;
@@ -401,9 +402,11 @@ section {
 }
 .portfolio-image {
   width: 100%;
+  height: auto;
   display: block;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 16px;
+  max-height: 400px;
 
 }
 .portfolio-image:hover {
@@ -579,9 +582,10 @@ section {
 }
 
 #what-is-merit {
-  max-width: 800px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  border-radius: 6px;
+  border-radius: 16px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
@@ -647,3 +651,22 @@ section {
   background-repeat: no-repeat
 }
 .scroll-to-top:hover { cursor: pointer; }
+
+
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+  .body-container { padding: 60px 0 120px 0;}
+  .intro-image-wrapper {
+    display: none;
+  }
+  .intro-text { margin-right: 0;}
+  .work-section.merit-international { margin-top: 80px;}
+}
+@media screen and (max-width: 460px) {
+  .company-row span { display: none;}
+}
