@@ -106,5 +106,7 @@ var lazyLoadInstance = new LazyLoad({
 
 const lightbox = GLightbox({
     touchNavigation: true,
+    width: 1400,
+    height: 900,
 });
  
