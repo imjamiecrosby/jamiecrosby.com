@@ -394,8 +394,8 @@ section {
   text-align: center; 
 }
 .work-text-section {
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 32px;
   max-width: 780px;
 }
 .portfolio-image {
@@ -413,7 +413,8 @@ section {
   font-weight: 500;
   color: #959595;
   line-height: 18px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+  margin-top: 40px;
 }
 .inline-link {
   font-size: 14px;
@@ -426,106 +427,88 @@ section {
   color: #0B469B;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .md-modal {
-position: fixed;
-top: 50%;
-left: 50%;
-width: 50%;
-max-width: 480px;
-min-width: 320px;
-height: auto;
-z-index: 2000;
-visibility: hidden;
--webkit-backface-visibility: hidden;
--moz-backface-visibility: hidden;
-backface-visibility: hidden;
--webkit-transform: translateX(-50%) translateY(-50%);
--moz-transform: translateX(-50%) translateY(-50%);
--ms-transform: translateX(-50%) translateY(-50%);
-transform: translateX(-50%) translateY(-50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  max-width: 480px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 .md-show {
-visibility: visible;
+  visibility: visible;
 }
 .md-overlay {
-position: fixed;
-width: 100%;
-height: 100%;
-visibility: hidden;
-top: 0;
-left: 0;
-z-index: 1000;
-opacity: 0;
-background: rgba(0,0,0,0.4);
--webkit-transition: all 0.3s;
--moz-transition: all 0.3s;
-transition: all 0.3s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(0,0,0,0.4);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .md-show ~ .md-overlay {
-opacity: 1;
-visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 .md-content {
-color: #333;
-background: #fff;
-position: relative;
-border-radius: 4px;
-margin: 0 auto;
-box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.028),
-    0 12.5px 10px rgba(0, 0, 0, 0.035),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-    0 100px 80px rgba(0, 0, 0, 0.07);
+  color: #333;
+  background: #fff;
+  position: relative;
+  border-radius: 4px;
+  margin: 0 auto;
+  box-shadow:
+      0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+      0 12.5px 10px rgba(0, 0, 0, 0.035),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+      0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+      0 100px 80px rgba(0, 0, 0, 0.07);
 }
 .md-effect-1 .md-content {
--webkit-transform: scale(0.7);
--moz-transform: scale(0.7);
--ms-transform: scale(0.7);
-transform: scale(0.7);
-opacity: 0;
--webkit-transition: all 0.3s;
--moz-transition: all 0.3s;
-transition: all 0.3s;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .md-show.md-effect-1 .md-content {
--webkit-transform: scale(1);
--moz-transform: scale(1);
--ms-transform: scale(1);
-transform: scale(1);
-opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
 }
 .md-close {
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E %3Cpath fill='%23D8D8D8' fill-rule='evenodd' d='M581.415872,16.445041 C582.010753,15.8501596 582.965088,15.8534583 583.555739,16.4441088 L583.555739,16.4441088 L583.660238,16.5596606 C584.147649,17.1567018 584.109024,18.0297581 583.554806,18.5839756 L583.554806,18.5839756 L577.138,24.999 L583.554806,31.4157191 C584.109024,31.9699366 584.147649,32.842993 583.660238,33.4400342 L583.555739,33.555586 C582.965088,34.1462365 582.010753,34.1495351 581.415872,33.5546538 L575,27.138 L568.584128,33.5546538 C568.026427,34.112355 567.1528,34.1443121 566.559094,33.6594473 L566.444261,33.555586 C565.849493,32.9608176 565.854028,32.0068844 566.445194,31.4157191 L566.445194,31.4157191 L572.861,24.999 L566.445194,18.5839756 C565.854028,17.9928103 565.849493,17.0388772 566.444261,16.4441088 C567.034912,15.8534583 567.989247,15.8501596 568.584128,16.445041 L575,22.861 Z' transform='translate(-566 -16)'/%3E %3C/svg%3E ");
-height: 18px;
-width: 18px;
-cursor: pointer;
-position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E %3Cpath fill='%23D8D8D8' fill-rule='evenodd' d='M581.415872,16.445041 C582.010753,15.8501596 582.965088,15.8534583 583.555739,16.4441088 L583.555739,16.4441088 L583.660238,16.5596606 C584.147649,17.1567018 584.109024,18.0297581 583.554806,18.5839756 L583.554806,18.5839756 L577.138,24.999 L583.554806,31.4157191 C584.109024,31.9699366 584.147649,32.842993 583.660238,33.4400342 L583.555739,33.555586 C582.965088,34.1462365 582.010753,34.1495351 581.415872,33.5546538 L575,27.138 L568.584128,33.5546538 C568.026427,34.112355 567.1528,34.1443121 566.559094,33.6594473 L566.444261,33.555586 C565.849493,32.9608176 565.854028,32.0068844 566.445194,31.4157191 L566.445194,31.4157191 L572.861,24.999 L566.445194,18.5839756 C565.854028,17.9928103 565.849493,17.0388772 566.444261,16.4441088 C567.034912,15.8534583 567.989247,15.8501596 568.584128,16.445041 L575,22.861 Z' transform='translate(-566 -16)'/%3E %3C/svg%3E ");
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+  position: absolute;
   right: 16px;
   top: 16px;
   transition: 200ms cubic-bezier(0.25, 0.25, 0.25, 1);
 }
 .md-close:hover {
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E %3Cpath fill='%23333' fill-rule='evenodd' d='M581.415872,16.445041 C582.010753,15.8501596 582.965088,15.8534583 583.555739,16.4441088 L583.555739,16.4441088 L583.660238,16.5596606 C584.147649,17.1567018 584.109024,18.0297581 583.554806,18.5839756 L583.554806,18.5839756 L577.138,24.999 L583.554806,31.4157191 C584.109024,31.9699366 584.147649,32.842993 583.660238,33.4400342 L583.555739,33.555586 C582.965088,34.1462365 582.010753,34.1495351 581.415872,33.5546538 L575,27.138 L568.584128,33.5546538 C568.026427,34.112355 567.1528,34.1443121 566.559094,33.6594473 L566.444261,33.555586 C565.849493,32.9608176 565.854028,32.0068844 566.445194,31.4157191 L566.445194,31.4157191 L572.861,24.999 L566.445194,18.5839756 C565.854028,17.9928103 565.849493,17.0388772 566.444261,16.4441088 C567.034912,15.8534583 567.989247,15.8501596 568.584128,16.445041 L575,22.861 Z' transform='translate(-566 -16)'/%3E %3C/svg%3E ");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E %3Cpath fill='%23333' fill-rule='evenodd' d='M581.415872,16.445041 C582.010753,15.8501596 582.965088,15.8534583 583.555739,16.4441088 L583.555739,16.4441088 L583.660238,16.5596606 C584.147649,17.1567018 584.109024,18.0297581 583.554806,18.5839756 L583.554806,18.5839756 L577.138,24.999 L583.554806,31.4157191 C584.109024,31.9699366 584.147649,32.842993 583.660238,33.4400342 L583.555739,33.555586 C582.965088,34.1462365 582.010753,34.1495351 581.415872,33.5546538 L575,27.138 L568.584128,33.5546538 C568.026427,34.112355 567.1528,34.1443121 566.559094,33.6594473 L566.444261,33.555586 C565.849493,32.9608176 565.854028,32.0068844 566.445194,31.4157191 L566.445194,31.4157191 L572.861,24.999 L566.445194,18.5839756 C565.854028,17.9928103 565.849493,17.0388772 566.444261,16.4441088 C567.034912,15.8534583 567.989247,15.8501596 568.584128,16.445041 L575,22.861 Z' transform='translate(-566 -16)'/%3E %3C/svg%3E ");
 }
 #contact_form {
   display: flex;
@@ -570,7 +553,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 #contact_form .message {
   font-size: 16px;
-  
+
 }
 
 .inline-link span .line {
