@@ -109,4 +109,55 @@ const lightbox = GLightbox({
     width: 1400,
     height: 900,
 });
+
+
+
+function fadeOut(el){
+    el.style.opacity = 1;
+  
+    (function fade() {
+      if ((el.style.opacity -= .1) < 0) {
+        el.style.display = "none";
+      } else {
+        requestAnimationFrame(fade);
+      }
+    })();
+  };
+
+  function fadeIn(el, display){
+    el.style.opacity = 0;
+    el.style.display = display || "block";
+  
+    (function fade() {
+      var val = parseFloat(el.style.opacity);
+      if (!((val += .1) > 1)) {
+        el.style.opacity = val;
+        requestAnimationFrame(fade);
+      }
+    })();
+  };
+
+document.addEventListener("scroll", handleScroll);
+var scrollToTopBtn = document.querySelector(".scroll-to-top");
+
+function handleScroll() {
+  var scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var GOLDEN_RATIO = 0.5;
+
+  if ((document.documentElement.scrollTop / scrollableHeight ) > GOLDEN_RATIO) {
+    fadeIn(scrollToTopBtn)
+    
+  } else {
+    fadeOut(scrollToTopBtn)
+  }
+}
+
+scrollToTopBtn.addEventListener("click", scrollToTop);
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
  
