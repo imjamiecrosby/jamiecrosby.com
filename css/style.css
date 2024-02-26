@@ -694,4 +694,5 @@ section {
 }
 @media screen and (max-width: 460px) {
   .company-row span { display: none;}
+  .animation-container { height: 260px;}
 }
