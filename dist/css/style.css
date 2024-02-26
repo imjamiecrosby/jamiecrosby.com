@@ -285,6 +285,7 @@ section {
 }
 .intro-title { 
   font-size: 32px;
+  margin-top: 6px;
 }
 .intro-image {
   border-radius: 8px;
