@@ -432,6 +432,16 @@ section {
 .inline-link:hover {
   color: #0B469B;
 }
+.more-context-text {
+  font-size: 20px;
+  margin-top: 0;
+  line-height: 28px;
+}
+.more-context-container .portfolio-image-title { 
+  margin-top: 110px;
+  font-weight: 600;
+}
+.work-section.merit-international { margin-top: 90px;}
 
 .md-modal {
   position: fixed;
