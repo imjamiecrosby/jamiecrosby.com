@@ -653,10 +653,9 @@ section {
 .scroll-to-top:hover { cursor: pointer; }
 
 
-
-
-
-
+.gloader { display: none;}
+.goverlay { display: none;}
+#glightbox-body { background: rgba(0,0,0,0.8) }
 
 
 @media screen and (max-width: 780px) {
