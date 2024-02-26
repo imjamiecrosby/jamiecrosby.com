@@ -135,6 +135,7 @@ textarea {
   white-space: inherit;
   width: auto;
 }
+.no-click { pointer-events: none;}
 
 /*
  * Hide visually and from screen readers, but maintain layout
@@ -419,7 +420,7 @@ section {
   color: #959595;
   line-height: 18px;
   margin-bottom: 8px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .inline-link {
   font-size: 14px;
@@ -582,7 +583,7 @@ section {
   transform: translateX(0);
 }
 
-#what-is-merit {
+#what-is-merit, #glidr-onboarding {
   width: 100%;
   height: auto;
   margin: 0 auto;
