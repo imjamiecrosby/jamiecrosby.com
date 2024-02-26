@@ -36,7 +36,6 @@ function removeModal() {
     emailjs.init("Yuql5RNtZIYVmFhGz");
 })();
 
-//  Getting elements
 const form = document.getElementById('contact_form');
 const userName = document.getElementById('user_name').value;
 const userEmail = document.getElementById('user_email').value;
@@ -53,9 +52,7 @@ const templateParams = {
 }
 
 function validateForm() {
-    // Using Contraint API
     isValid = form.checkValidity();
-    // Style main message for an error
     if(isValid === false) {
         message.textContent ="Please fil out all the fields";
         message.style.color = 'red';
@@ -67,10 +64,8 @@ function validateForm() {
  function processFormData(e) {
     e.preventDefault()
     
-    // Validating form 
     validateForm();
 
-    // Sending the formdata
     if(isValid === true) {
     emailjs.send('service_luspkml', 'contact_form', templateParams)
     .then(function(response){
