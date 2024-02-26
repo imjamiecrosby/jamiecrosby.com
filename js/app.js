@@ -2,7 +2,8 @@
 import emailjs from '@emailjs/browser';
 import Sticky from 'sticky-js';
 import LazyLoad from "vanilla-lazyload";
-import GLightbox from 'glightbox';
+import lottie from 'lottie-web';
+import fslightbox from 'fslightbox';
 
 
 
@@ -99,11 +100,7 @@ var lazyLoadInstance = new LazyLoad({
 
 // Lightbox
 
-const lightbox = GLightbox({
-    touchNavigation: true,
-    width: 1400,
-    height: 900,
-});
+
 
 
 
@@ -155,4 +152,20 @@ function scrollToTop() {
     behavior: "smooth"
   });
 }
+
+
+
+// Lottie
+
+lottie.loadAnimation({
+    container: document.getElementById('lottie-container'), 
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'files/benchmarks.json',
+    scaleMode: 'noScale',
+    
+  });
+
+
  
