@@ -653,8 +653,8 @@ section {
 .scroll-to-top:hover { cursor: pointer; }
 
 
-.gloader { display: none;!important}
-.goverlay { display: none;!important}
+.gloader { display: none!important;}
+.goverlay { display: none!important;}
 
 
 @media screen and (max-width: 780px) {
