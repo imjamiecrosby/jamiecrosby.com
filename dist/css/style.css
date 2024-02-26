@@ -655,10 +655,6 @@ section {
 .scroll-to-top:hover { cursor: pointer; }
 
 
-.gloader { display: none!important;}
-.goverlay { display: none!important;}
-
-
 @media screen and (max-width: 780px) {
   .body-container { padding: 60px 0 120px 0;}
   .intro-image-wrapper {
