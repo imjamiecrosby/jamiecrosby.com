@@ -29,7 +29,6 @@ function removeModal() {
 }
 
 
-
 // Form
 
 (function() {
@@ -66,8 +65,6 @@ form.addEventListener('submit', processFormData);
 
 
 
-
-
 // Sticky Titles
 
 var sticky = new Sticky('[data-sticky]');
@@ -79,8 +76,6 @@ var sticky = new Sticky('[data-sticky]');
 var lazyLoadInstance = new LazyLoad({
     use_native: true
 });
-
-
 
 
 
@@ -148,6 +143,10 @@ lottie.loadAnimation({
     scaleMode: 'noScale',
     
 });
+
+
+
+
 
 
  
