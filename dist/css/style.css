@@ -461,6 +461,11 @@ section {
 }
 #lottie-container svg:nth-child(2) { display: none;}
 
+.work-text-section a ~ p {
+  padding: 0 8px;
+}
+
+
 .md-modal {
   position: fixed;
   top: 50%;
@@ -682,19 +687,57 @@ section {
   background-repeat: no-repeat
 }
 .scroll-to-top:hover { cursor: pointer; }
-
-
 .work-section.merit-international { margin-top: 160px;}
 
-@media screen and (max-width: 780px) {
-  .body-container { padding: 60px 0 120px 0;}
+.social-link {
+  position: fixed; 
+  bottom: 24px;
+  left: 24px;
+}
+.social-link {
+  margin-right: 12px;
+}
+.social-link svg path { 
+  fill: #D9D9D9;
+  transition: 200ms cubic-bezier(0.25, 0.25, 0.25, 1);
+}
+.social-link:hover svg path {
+  fill: #000;
+}
+
+@media screen and (max-width: 1100px) {
+  .social-link {
+    position:relative;
+    bottom: 50px;
+    left: 50px;
+  }
+  .body-container {
+    padding: 160px 0;
+  }
+  .work-section.merit-international {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .body-container { 
+    padding: 60px 0;
+  }
   .intro-image-wrapper {
     display: none;
   }
-  .intro-text { margin-right: 0;}
-  .work-section.merit-international { margin-top: 80px;}
+  .intro-text { 
+    margin-right: 0;
+  }
+  .work-section.merit-international { 
+    margin-top: 80px;
+  }
 }
 @media screen and (max-width: 460px) {
-  .company-row span { display: none;}
-  .animation-container { height: 260px;}
+  .company-row span { 
+    display: none;
+  }
+  .animation-container { 
+    height: 260px;
+  }
 }
