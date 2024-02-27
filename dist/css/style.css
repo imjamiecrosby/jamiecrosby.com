@@ -625,37 +625,37 @@ section {
   stroke-dasharray: 950px;
   stroke-dashoffset: 950px;
   animation: draw 800ms cubic-bezier(0.25, 0.25, 0.25, 1) forwards;
-  animation-delay: 1.5s
+  animation-delay: 1.2s
 }
 .animate.m {
   stroke-dasharray: 375px;
   stroke-dashoffset: 375px;
   animation: draw 700ms cubic-bezier(0.25, 0.25, 0.25, 1) forwards;
-  animation-delay: 2.3s
+  animation-delay: 2.0s
 }
 .animate.e {
   stroke-dasharray: 130px;
   stroke-dashoffset: 130px;
   animation: draw 600ms cubic-bezier(0.25, 0.25, 0.25, 1) forwards;
-  animation-delay: 3s
+  animation-delay: 2.6s
 }
 .animate.me-arrow-one {
   stroke-dasharray: 200px;
   stroke-dashoffset: 200px;
   animation: draw 400ms cubic-bezier(0.25, 0.25, 0.25, 1) forwards;
-  animation-delay: 3.6s
+  animation-delay: 3.2s
 }
 .animate.me-arrow-two {
   stroke-dasharray: 75px;
   stroke-dashoffset: 75px;
   animation: draw 300ms cubic-bezier(0.25, 0.25, 0.25, 1) forwards;
-  animation-delay: 3.9s
+  animation-delay: 3.5s
 }
 .animate.me-arrow-three {
   stroke-dasharray: 50px;
   stroke-dashoffset: 50px;
   animation: draw 200ms cubic-bezier(0.25, 0.25, 0.25, 1) forwards;
-  animation-delay: 4.1s
+  animation-delay: 3.7s
 }
 
 @keyframes draw {
@@ -683,6 +683,8 @@ section {
 }
 .scroll-to-top:hover { cursor: pointer; }
 
+
+.work-section.merit-international { margin-top: 160px;}
 
 @media screen and (max-width: 780px) {
   .body-container { padding: 60px 0 120px 0;}
