@@ -16,6 +16,11 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+p {
+  font-size: 16px;
+  line-height: 32px;
+
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -416,7 +421,7 @@ section {
 }
 .portfolio-image-title {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: #444;
   line-height: 18px;
   margin-bottom: 8px;
@@ -743,5 +748,76 @@ section {
   }
   .animation-container { 
     height: 260px;
+  }
+}
+
+
+
+.body-container.portfolio {
+  padding: 80px 0 120px 0;
+}
+.case-study-container .company-dates {
+  color: #0B469B
+}
+.case-study-container {
+  margin-top: 80px;
+}
+.case-study-container p { font-size: 16px;}
+
+.case-study-image { 
+  max-width: 600px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.case-study-image.full-width {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 6px;
+}
+.case-study-image.no-shadow {
+  box-shadow: none;
+}
+.case-study-subtitle {
+  margin-top: 0px;
+}
+.radar-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+.body-container.portfolio {
+  position: relative;
+}
+.back-button {
+  position: absolute;
+  top: 24px;
+  left: 0px;
+}
+.back-button-stroke  { 
+  transition: 200ms cubic-bezier(0.25, 0.25, 0.25, 1);
+  stroke: #444;
+}
+.back-button-fill { 
+  transition: 200ms cubic-bezier(0.25, 0.25, 0.25, 1);
+  fill: #444;
+}
+
+.back-button:hover .back-button-fill {
+  fill: #000;
+}
+.back-button:hover .back-button-stroke {
+  stroke: #000;
+}
+.no-click:hover {
+  cursor: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .social-link.portfolio {
+      position: relative;
+      bottom: 48px;
+      left: 12px;
   }
 }
