@@ -800,3 +800,6 @@ section {
 .back-button:hover .back-button-stroke {
   stroke: #000;
 }
+.no-click:hover {
+  cursor: none;
+}

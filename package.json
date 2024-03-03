@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
+    "commonjs": "^0.0.1",
     "emailjs": "^4.0.3",
     "fslightbox": "^3.4.1",
     "gsap": "^3.12.5",

@@ -1,73 +1,94 @@
 
+import LazyLoad from "vanilla-lazyload";
+import fslightbox from "fslightbox";
 import emailjs from '@emailjs/browser';
 import Sticky from 'sticky-js';
-import LazyLoad from "vanilla-lazyload";
 import lottie from 'lottie-web';
-import fslightbox from 'fslightbox';
+
+
+if (window.location.pathname=='/') {
 
 
 
-// Modal Popup
 
-const overlay = document.querySelector('.md-overlay');
-const trigger = document.querySelector('.md-trigger');
-const modal = document.querySelector('.md-modal');
-const close = document.querySelector('.md-close');
+    // Modal Popup
 
-trigger.addEventListener('click', function(ev) {
-    modal.classList.add('md-show');
-    overlay.addEventListener('click',removeModal);
-});
+    const overlay = document.querySelector('.md-overlay');
+    const trigger = document.querySelector('.md-trigger');
+    const modal = document.querySelector('.md-modal');
+    const close = document.querySelector('.md-close');
 
-close.addEventListener( 'click', function(ev)  {
-    ev.stopPropagation();
-    removeModal();
-});
+    trigger.addEventListener('click', function(ev) {
+        modal.classList.add('md-show');
+        overlay.addEventListener('click',removeModal);
+    });
 
-function removeModal() {
-    modal.classList.remove('md-show')
-}
+    close.addEventListener( 'click', function(ev)  {
+        ev.stopPropagation();
+        removeModal();
+    });
 
-
-// Form
-
-(function() {
-    emailjs.init("Yuql5RNtZIYVmFhGz");
-})();
-const form = document.getElementById('contact_form');
-const messageContainer = document.querySelector('.message-container');
-const message = document.getElementById('message');
-let isValid = false
-function validateForm() {
-    isValid = form.checkValidity();
-    if(isValid === false) {
-        message.textContent ="Please fil out all the fields";
-        message.style.color = 'red';
-    } else if(isValid === true) {
-        message.textContent ="Your message is being sent";
+    function removeModal() {
+        modal.classList.remove('md-show')
     }
-}
-function processFormData(e) {
-    e.preventDefault()
-    validateForm();
-    if(isValid === true) {
-        emailjs.sendForm('service_luspkml', 'template_hgzch5j', this)
-            .then(function(response){
-                message.textContent ="Thank you very much we will reply to you as soon as possible";
-                message.style.color = 'green';
-                console.log('SUCCES', response.status, response.text);
-            }, (error) => {
-                console.log('FAILED...', error);
-            });
+
+
+    // Form
+
+    (function() {
+        emailjs.init("Yuql5RNtZIYVmFhGz");
+    })();
+    const form = document.getElementById('contact_form');
+    const messageContainer = document.querySelector('.message-container');
+    const message = document.getElementById('message');
+    let isValid = false
+    function validateForm() {
+        isValid = form.checkValidity();
+        if(isValid === false) {
+            message.textContent ="Please fil out all the fields";
+            message.style.color = 'red';
+        } else if(isValid === true) {
+            message.textContent ="Your message is being sent";
+        }
     }
+    function processFormData(e) {
+        e.preventDefault()
+        validateForm();
+        if(isValid === true) {
+            emailjs.sendForm('service_luspkml', 'template_hgzch5j', this)
+                .then(function(response){
+                    message.textContent ="Thank you very much we will reply to you as soon as possible";
+                    message.style.color = 'green';
+                    console.log('SUCCES', response.status, response.text);
+                }, (error) => {
+                    console.log('FAILED...', error);
+                });
+        }
+    }
+    form.addEventListener('submit', processFormData);
+
+
+
+    // Sticky Titles
+
+    var sticky = new Sticky('[data-sticky]');
+
+
+
+    // Lottie
+
+    lottie.loadAnimation({
+        container: document.getElementById('lottie-container'), 
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'files/benchmarks.json',
+        scaleMode: 'noScale',
+        
+    });
+
 }
-form.addEventListener('submit', processFormData);
 
-
-
-// Sticky Titles
-
-var sticky = new Sticky('[data-sticky]');
 
 
 
@@ -83,7 +104,7 @@ var lazyLoadInstance = new LazyLoad({
 
 function fadeOut(el){
     el.style.opacity = 1;
-  
+
     (function fade() {
         if ((el.style.opacity -= .1) < 0) {
             el.style.display = "none";
@@ -132,17 +153,8 @@ function scrollToTop() {
 
 
 
-// Lottie
 
-lottie.loadAnimation({
-    container: document.getElementById('lottie-container'), 
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'files/benchmarks.json',
-    scaleMode: 'noScale',
-    
-});
+
 
 
 
