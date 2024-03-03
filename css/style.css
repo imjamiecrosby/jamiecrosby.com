@@ -16,6 +16,11 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+p {
+  font-size: 20px;
+  line-height: 32px;
+
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -744,4 +749,54 @@ section {
   .animation-container { 
     height: 260px;
   }
+}
+
+
+
+
+.body-container.portfolio {
+  padding: 80px 0 120px 0;
+}
+.case-study-container .company-dates {
+  color: #0B469B
+}
+.case-study-container {
+  margin-top: 80px;
+}
+
+.case-study-image { 
+  max-width: 600px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.case-study-image.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+.radar-image {
+  max-width: 400px;
+}
+.body-container.portfolio {
+  position: relative;
+}
+.back-button {
+  position: absolute;
+  top: 24px;
+  left: -60px;
+}
+.back-button-stroke  { 
+  transition: 200ms cubic-bezier(0.25, 0.25, 0.25, 1);
+  stroke: #444;
+}
+.back-button-fill { 
+  transition: 200ms cubic-bezier(0.25, 0.25, 0.25, 1);
+  fill: #444;
+}
+
+.back-button:hover .back-button-fill {
+  fill: #000;
+}
+.back-button:hover .back-button-stroke {
+  stroke: #000;
 }
