@@ -9,8 +9,6 @@ import lottie from 'lottie-web';
 if (window.location.pathname=='/') {
 
 
-
-
     // Modal Popup
 
     const overlay = document.querySelector('.md-overlay');
@@ -89,6 +87,7 @@ if (window.location.pathname=='/') {
 
 }
 
+var lightbox = new FsLightbox();
 
 
 
