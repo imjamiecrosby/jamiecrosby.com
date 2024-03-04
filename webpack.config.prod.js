@@ -21,6 +21,8 @@ module.exports = merge(common, {
         { from: 'icon.png', to: 'icon.png' },
         { from: '404.html', to: '404.html' },
         { from: 'merit_onboarding.html', to: 'merit_onboarding.html' },
+        { from: 'benchmarks.html', to: 'benchmarks.html' },
+        { from: 'glidr.html', to: 'glidr.html' },
         { from: 'favicon-16x16.png', to: 'favicon-16x16.png' },
         { from: 'favicon-32x32.png', to: 'favicon-32x32.png' },
         { from: 'android-chrome-192x192.png', to: 'android-chrome-192x192.png' },
