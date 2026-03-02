@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+
+  <!-- Visa -->
+  <symbol id="cc-visa" viewBox="0 0 80 50">
+    <rect width="80" height="50" rx="4" fill="#1A1F71"/>
+    <text x="40" y="34" font-family="Arial,sans-serif" font-size="22" font-weight="700" font-style="italic" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">VISA</text>
+  </symbol>
+
+  <!-- Mastercard -->
+  <symbol id="cc-mastercard" viewBox="0 0 80 50">
+    <rect width="80" height="50" rx="4" fill="#252525"/>
+    <circle cx="30" cy="25" r="14" fill="#EB001B"/>
+    <circle cx="50" cy="25" r="14" fill="#F79E1B"/>
+    <path d="M40 14.3a14 14 0 0 1 0 21.4A14 14 0 0 1 40 14.3z" fill="#FF5F00"/>
+  </symbol>
+
+  <!-- Amex -->
+  <symbol id="cc-amex" viewBox="0 0 80 50">
+    <rect width="80" height="50" rx="4" fill="#2E77BC"/>
+    <text x="40" y="30" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">AMEX</text>
+  </symbol>
+
+  <!-- Discover -->
+  <symbol id="cc-discover" viewBox="0 0 80 50">
+    <rect width="80" height="50" rx="4" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="22" y="30" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#231F20" text-anchor="middle" letter-spacing="0.5">DISCOVER</text>
+    <circle cx="62" cy="25" r="14" fill="#F76F20"/>
+  </symbol>
+
+</svg>
